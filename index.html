@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Montserrat:wght@900&family=Poppins:wght@400;600;700&family=Roboto&family=Ubuntu:ital@0;1&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/919e7ddcdd.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="main.js"></script>
+
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <img class="nav_logo" src="components/logo.png" alt="my logo">
+            <div class="navbar-components">
+                <ul class="nav-items">
+                    <li style="opacity: 1;">Home</li>
+                    <li>About</li>
+                    <li>Skills</li>
+                    <li>Projects</li>
+                    <li>Blog</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="left-sidebar">
+        <ul class="socials-list">
+            <li><i class="fa-brands fa-github social-icons"></i></li>
+            <li><i class="fa-brands fa-linkedin social-icons"></i></li>
+            <li><i class="fa-brands fa-instagram social-icons"></i></li>
+            <li><i class="fa-brands fa-twitter social-icons"></i></li>
+            <li><img src="./components/stroke-left.png" alt="stroke" srcset=""></li>
+        </ul>
+    </div>
+
+    <div class="right-sidebar">
+        <ul>
+            <li>kraparesh@gmail.com</li>
+            <li><img src="./components/stroke-left.png" alt="stroke"></li>
+        </ul>
+    </div>
+
+    <section id="home" class="section">
+        <img class="gif-circle" src="./components/portfolio.gif" alt="circle img">
+        <div class="home_desc">
+            <div class="text-desc">
+                <p class="job-title">Full Stack Developer</p>
+                <h2>Aparesh Kumar</h2>
+                <p class="my-desc">I am an aspiring developer and am passionate about technology and all that
+                    it has to offer. I am passionate about building innovative and user-friendly applications that
+                    solve real-world problems. I am always looking to learn new technologies and expand my skillset,
+                    and I am excited to bring my expertise and dedication to any project I work on.</p>
+            </div>
+            <div class="home_buttons">
+                <button class="btn btn-resume">Resume</button>
+                <button class="btn btn-contact">Contact</button>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="content-header">
+            <h2>About Me</h2>
+        </div>
+        <div class="about-content-parent section">
+            <div class="about-content">
+                <div class="about-text">
+                    <img class="title_img" src="./components/Hello.png" alt="hello!">
+                    <p class="about-description">
+                        My name is Aparesh Kumar and I enjoy making things that live on the internet. My interest in
+                        development started back in 2020 when I decided to make custom game modifications using
+                        LUA - turns out it motivated me to explore more and I ended up developing my interest in
+                        web-development!
+                        <br><br>
+                        Fast-forward to today, I am a sophomore at Siksha ‘O’ Anusandhan, pursuing a Bachelor’s
+                        Degree with Computer Science and Engineering as a major. I have been working on projects
+                        based on MERN stack and I intend to achieve expertise in it.
+                    </p>
+                </div>
+                <img class="about_img" src="./components/pic.jpg" alt="my pic">
+            </div>
+        </div>
+    </section>
+
+    <section id="Skills">
+        <div class="content-header">
+            <h2>Skills</h2>
+        </div>
+        <div class="skills-content section">
+            <div class="skills-text-content">
+                <img class="title_img" src="./components/What I know.png" alt="What I know">
+                <div class="skill_parent">
+
+                    <div class="my-expertise">
+                        <img class="tech-logo" src="./components/JS-logo.png" alt="JS logo">
+                        <div>
+                            <p class="tech-name">JavaScript</p>
+                            <p class="tech-description">
+                                I have over 1 year of experience as a JavaScript developer. I spent most of this time
+                                building applications with NodeJs and express. I also have experience with version
+                                control such as Git.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="my-expertise">
+                        <img class="tech-logo" src="./components/java-logo.png" alt="Java">
+                        <div>
+                            <p class="tech-name">Java</p>
+                            <p class="tech-description">
+                                With web-development being my primary area of focus, I have a decent understanding of
+                                Java programming language. With my knowledge and programming skills, I strive to make
+                                applications to solve real-world problems.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="skills-img">
+                <img src="./components/coding-skills.png" alt="coding skills">
+            </div> -->
+
+        </div>
+    </section>
+
+    <section id="Projects">
+        <div class="content-header">
+            <h2>Projects</h2>
+        </div>
+        <div class="project-content-parent section">
+            <img class="title_img" src="./components/project-header.png" alt="Some things I've built">
+            <div class="proj_parent">
+                <div class="project-content">
+                    <div class="project-showcase">
+                        <img class="showcase-img" src="./components/product-img.png" alt="product image">
+                        <div class="project-text">
+                            <p class="featured-project p-styled p-odd">Featured Project</p>
+                            <h2 class="p-styled p-odd">To-do List Application</h2>
+                            <p class="project-desc p-styled p-odd">
+                                This was among my first web development projects. It is a to-do list application which
+                                uses
+                                cookies to store the state of the application on the browser session.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-showcase project-wrap">
+                        <img class="showcase-img" src="./components/product-img.png" alt="product image">
+                        <div class="project-text">
+                            <p class="featured-project p-styled p-even">Featured Project</p>
+                            <h2 class="p-styled p-even">Checkmate Discord Bot Application</h2>
+                            <p class="project-desc p-styled p-even">
+                                This application has been designed for my university’s chess club to provide them with
+                                an
+                                online chess experience. The application enables them to get keep a track of their
+                                scores
+                                and compete with other players.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-showcase">
+                        <img class="showcase-img" src="./components/product-img.png" alt="product image">
+                        <div class="project-text">
+                            <p class="featured-project p-styled p-odd">Featured Project</p>
+                            <h2 class="p-styled p-odd">Automated Notification Services</h2>
+                            <p class="project-desc p-styled p-odd">
+                                I’ve worked on a service that fetches updates from public forums and university
+                                websites.
+                                The goal was to send updates and alerts to users through their desired mode of
+                                communication.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Hobbies">
+        <div class="content-header">
+            <h2>Hobbies</h2>
+        </div>
+        <div class="project-content-parent section">
+            <img class="title_img" src="./components/Jolly Times.png" alt="Jolly Times">
+            <div class="proj_parent">
+                <div class="project-content">
+                    <div class="project-showcase">
+                        <img class="showcase-img" src="./components/product-img.png" alt="product image">
+                        <div class="project-text">
+                            <h2 class="p-styled p-odd">Music Production</h2>
+                            <p class="project-desc p-styled p-odd">
+                                My passion for music is all time high. I enjoy listening to the symphony of nature which
+                                helps me to embrace my piano skills. I have made a couple of short piano covers for you
+                                to
+                                enjoy!
+                            </p>
+                            <div class="hobby-btn">
+                                <button class="btn btn-resume">Listen Now!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-showcase project-wrap">
+                        <img class="showcase-img" src="./components/product-img.png" alt="product image">
+                        <div class="project-text">
+                            <h2 class="p-styled p-even">Blogging</h2>
+                            <p class="project-desc p-styled p-even">
+                                Blogging can be a wonderful outlet for creativity and self-expression. I love to write
+                                about
+                                things that fascinate me. These also include book reviews and summaries!
+                            </p>
+                            <div class="hobby-btn-blog">
+                                <button class="btn btn-resume">Know More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="content-header">
+            <h2>Contact</h2>
+        </div>
+        <div class="contact-details-parent section">
+            <div class="contact-details">
+                <p class="wht-next">What's Next?</p>
+                <h2>Get In Touch</h2>
+                <p class="contact-desc">My inbox is always open to new opportunities and I believe we can do so much
+                    together. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+                </p>
+                <button class="btn btn-contact-me">Say Hello</button>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
