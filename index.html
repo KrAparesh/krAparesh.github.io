@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="sstyles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="shortcut icon" href="./components/favicon.ico" type="image/x-icon">
@@ -36,7 +36,7 @@
         </nav>
     </header>
 
-    <div class="left-sidebar">
+    <!-- <div class="left-sidebar">
         <ul class="socials-list">
             <li><a href="https://www.github.com/krAparesh" target="_blank" class="href"><i class="fa-brands fa-github social-icons"></i></a></li>
             <li><a href="https://www.linkedin.com/in/krAparesh" target="_blank" class="href"><i class="fa-brands fa-linkedin social-icons"></i></a></li>
@@ -51,7 +51,7 @@
             <li><a href="mailto:kraparesh@gmail.com">kraparesh@gmail.com</a></li>
             <li><img src="./components/stroke-left.png" alt="stroke"></li>
         </ul>
-    </div>
+    </div> -->
 
     <section id="home" class="section">
         <img class="gif-circle" src="./components/portfolio.gif" alt="circle img">
@@ -73,13 +73,21 @@
     </section>
 
     <section id="about">
-        <div class="content-header">
+        <!-- <div class="content-header">
             <h2>About Me</h2>
-        </div>
+        </div> -->
         <div class="about-content-parent section">
             <div class="about-content">
                 <div class="about-text">
-                    <img class="title_img" src="./components/Hello.png" alt="hello!">
+                    <div class="content-title">
+                        <div>
+                            <p class="">About Me</p>
+                        </div>
+                        <div class="inner-bar">
+                            <div class="inner-bar-blue"></div>
+                            <div class="inner-bar-dark"></div>
+                        </div>
+                    </div>
                     <p class="about-description">
                         My name is Aparesh Kumar and I enjoy making things that live on the internet. My interest in
                         development started back in 2020 when I decided to make custom game modifications using
@@ -91,21 +99,53 @@
                         based on MERN stack and I intend to achieve expertise in it.
                     </p>
                 </div>
-                <img class="about_img" src="./components/pic.jpg" alt="my pic">
+                <!-- <div class="about_img">
+                    <img class="my_pic" src="./components/pic.jpg" alt="my pic">
+                </div> -->
+                <div class="wrapper">
+                    <div class="bdr"></div>
+                    <img class="my_pic" src="./components/pic.jpg" alt="My pic">
+                    <div class="overlay_pic my_pic"></div>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="Skills">
-        <div class="content-header">
+        <!-- <div class="content-header">
             <h2>Skills</h2>
-        </div>
+        </div> -->
         <div class="skills-content section">
-            <div class="skills-text-content">
-                <img class="title_img" src="./components/What I know.png" alt="What I know">
-                <div class="skill_parent">
+            <!-- <div class="skills-text-content"> -->
+                <div class="content-title">
+                    <div>
+                        <p class="">What I know</p>
+                    </div>
+                    <div class="inner-bar">
+                        <div class="inner-bar-blue"></div>
+                        <div class="inner-bar-dark"></div>
+                    </div>
+                </div>
+                <div class="skill-parent">
+                    <div class="frontend-div skill-block">
+                        <h3>Frontend Developer</h3>
+                        <div class="skills-set">
+                            <div>
+                                <i class="fa-regular fa-badge-check"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="backend-div skill-block">
 
-                    <div class="my-expertise">
+                    </div>
+
+
+
+
+                    
+                    
+                    
+                    <!-- <div class="my-expertise">
                         <img class="tech-logo" src="./components/JS-logo.png" alt="JS logo">
                         <div>
                             <p class="tech-name">JavaScript</p>
@@ -126,8 +166,8 @@
                                 applications to solve real-world problems.
                             </p>
                         </div>
-                    </div>
-                </div>
+                    </div> -->
+                <!-- </div> -->
             </div>
             <!-- <div class="skills-img">
                 <img src="./components/coding-skills.png" alt="coding skills">
