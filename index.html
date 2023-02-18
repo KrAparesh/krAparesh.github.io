@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,15 +6,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="sstyles.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="shortcut icon" href="./components/favicon.ico" type="image/x-icon">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Montserrat:wght@900&family=Poppins:wght@400;600;700&family=Roboto&family=Ubuntu:ital@0;1&display=swap"
-        rel="stylesheet">
+    <link rel="shortcut icon" href="./components/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" /><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Montserrat:wght@900&family=Poppins:wght@400;600;700&family=Roboto&family=Roboto+Mono:wght@300;400;500&family=Ubuntu:ital@0;1&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/919e7ddcdd.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src="main.js"></script>
 
     <title>Aparesh Kumar</title>
@@ -22,36 +25,36 @@
 <body>
     <header>
         <nav class="navbar">
-            <img class="nav_logo" src="components/logo.png" alt="my logo">
+            <a href="#home" class="page-scroll"><img class="nav_logo" src="components/logo_new.svg" alt="my logo"></a>
             <div class="navbar-components">
                 <ul class="nav-items">
-                    <li style="opacity: 1;">Home</li>
-                    <li>About</li>
-                    <li>Skills</li>
-                    <li>Projects</li>
-                    <li>Blog</li>
-                    <li>Contact</li>
+        
+                    <li><a class = "page-scroll nav-item" href="#about">About</a></li>
+                    <li><a class = "page-scroll nav-item" href="#Skills">Skills</a></li>
+                    <li><a class = "page-scroll nav-item" href="#Projects">Projects</a></li>
+                    <li><a class = "page-scroll nav-item" href="#contact">Contact</a></li>
+                    <li><a href="#" class="btn btn-resume nav-btn">Resume</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
-    <!-- <div class="left-sidebar">
+    <div class="left-sidebar">
         <ul class="socials-list">
             <li><a href="https://www.github.com/krAparesh" target="_blank" class="href"><i class="fa-brands fa-github social-icons"></i></a></li>
             <li><a href="https://www.linkedin.com/in/krAparesh" target="_blank" class="href"><i class="fa-brands fa-linkedin social-icons"></i></a></li>
             <li><a href="https://www.instagram.com/aparesh_kr" target="_blank" class="href"><i class="fa-brands fa-instagram social-icons"></i></a></li>
             <li><a href="https://twitter.com/Aparesh20" target="_blank" class="href"><i class="fa-brands fa-twitter social-icons"></i></a></li>
-            <li><img src="./components/stroke-left.png" alt="stroke" srcset=""></li>
+            <li><img class="no-effect" src="./components/stroke-left.png" alt="stroke" srcset=""></li>
         </ul>
     </div>
 
     <div class="right-sidebar">
         <ul>
-            <li><a href="mailto:kraparesh@gmail.com">kraparesh@gmail.com</a></li>
-            <li><img src="./components/stroke-left.png" alt="stroke"></li>
+            <li class="right-social-icon"><a class="social-icons" href="mailto:kraparesh@gmail.com">kraparesh@gmail.com</a></li>
+            <li class="no-effect"><img src="./components/stroke-left.png" alt="stroke"></li>
         </ul>
-    </div> -->
+    </div>
 
     <section id="home" class="section">
         <img class="gif-circle" src="./components/portfolio.gif" alt="circle img">
@@ -65,8 +68,12 @@
                     and I am excited to bring my expertise and dedication to any project I work on.</p>
             </div>
             <div class="home_buttons">
-                <button class="btn btn-resume">Resume</button>
-                <button class="btn btn-contact">Contact</button>
+                <a href="" class="btn btn-resume">
+                    Resume
+                </a>
+                <!-- <a href="" class="btn btn-contact">
+                    Contact
+                </a> -->
             </div>
         </div>
         </div>
@@ -99,12 +106,9 @@
                         based on MERN stack and I intend to achieve expertise in it.
                     </p>
                 </div>
-                <!-- <div class="about_img">
-                    <img class="my_pic" src="./components/pic.jpg" alt="my pic">
-                </div> -->
                 <div class="wrapper">
                     <div class="bdr"></div>
-                    <img class="my_pic" src="./components/pic.jpg" alt="My pic">
+                    <img class="my_pic" src="./components/profile_pic.jpg" alt="My pic">
                     <div class="overlay_pic my_pic"></div>
                 </div>
             </div>
@@ -112,119 +116,226 @@
     </section>
 
     <section id="Skills">
-        <!-- <div class="content-header">
-            <h2>Skills</h2>
-        </div> -->
         <div class="skills-content section">
-            <!-- <div class="skills-text-content"> -->
-                <div class="content-title">
+                <div class="content-title skill-content-title">
                     <div>
-                        <p class="">What I know</p>
+                        <div>
+                            <p class="">What I know</p>
+                        </div>
+                        <div class="inner-bar">
+                            <div class="inner-bar-blue"></div>
+                            <div class="inner-bar-dark"></div>
+                        </div>
                     </div>
-                    <div class="inner-bar">
-                        <div class="inner-bar-blue"></div>
-                        <div class="inner-bar-dark"></div>
+                    <div>
+                        <span>My Technical Skills</span>
                     </div>
                 </div>
                 <div class="skill-parent">
                     <div class="frontend-div skill-block">
-                        <h3>Frontend Developer</h3>
+                        <h3 class="sub-skill-title">Frontend Developer</h3>
                         <div class="skills-set">
-                            <div>
-                                <i class="fa-regular fa-badge-check"></i>
+                            <div class="selection-left">
+                                <div class="sub-skill">
+                                    <div class="icon-div">     
+                                        <svg fill="white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M23 11.99 20.56 9.2l.34-3.69-3.61-.82L15.4 1.5 12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 11.99l2.44 2.79-.34 3.7 3.61.82 1.89 3.2 3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69 2.44-2.8zm-3.95 1.48-.56.65.08.85.18 1.95-1.9.43-.84.19-.44.74-.99 1.68-1.78-.77-.8-.34-.79.34-1.78.77-.99-1.67-.44-.74-.84-.19-1.9-.43.18-1.96.08-.85-.56-.65L3.67 12l1.29-1.48.56-.65-.09-.86-.18-1.94 1.9-.43.84-.19.44-.74.99-1.68 1.78.77.8.34.79-.34 1.78-.77.99 1.68.44.74.84.19 1.9.43-.18 1.95-.08.85.56.65 1.29 1.47-1.28 1.48z"></path><path d="m10.09 13.75-2.32-2.33-1.48 1.49 3.8 3.81 7.34-7.36-1.48-1.49z"></path></svg>
+                                        <!-- <i class="material-icons md-light my-icon">verifiedoutlined</i> -->
+                                    </div>
+                                    <div class="sub-skill-title-div">
+                                        <h3>HTML</h3>
+                                        <span>Intermediate</span>
+                                    </div>
+                                </div>
+                                <div class="sub-skill">
+                                    <div class="icon-div">
+                                        <svg fill="white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M23 11.99 20.56 9.2l.34-3.69-3.61-.82L15.4 1.5 12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 11.99l2.44 2.79-.34 3.7 3.61.82 1.89 3.2 3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69 2.44-2.8zm-3.95 1.48-.56.65.08.85.18 1.95-1.9.43-.84.19-.44.74-.99 1.68-1.78-.77-.8-.34-.79.34-1.78.77-.99-1.67-.44-.74-.84-.19-1.9-.43.18-1.96.08-.85-.56-.65L3.67 12l1.29-1.48.56-.65-.09-.86-.18-1.94 1.9-.43.84-.19.44-.74.99-1.68 1.78.77.8.34.79-.34 1.78-.77.99 1.68.44.74.84.19 1.9.43-.18 1.95-.08.85.56.65 1.29 1.47-1.28 1.48z"></path><path d="m10.09 13.75-2.32-2.33-1.48 1.49 3.8 3.81 7.34-7.36-1.48-1.49z"></path></svg>   
+                                        <!-- <i class="material-icons md-light my-icon">verifiedoutlined</i> -->
+                                    </div>
+                                    <div class="sub-skill-title-div">
+                                        <h3>Javascript</h3>
+                                        <span>Intermediate</span>
+                                    </div>
+                                </div>
+                                <div class="sub-skill">
+                                    <div class="icon-div"> 
+                                        <!-- <i class="material-icons md-light my-icon">verifiedoutlined</i> -->
+                                        <svg fill="white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M23 11.99 20.56 9.2l.34-3.69-3.61-.82L15.4 1.5 12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 11.99l2.44 2.79-.34 3.7 3.61.82 1.89 3.2 3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69 2.44-2.8zm-3.95 1.48-.56.65.08.85.18 1.95-1.9.43-.84.19-.44.74-.99 1.68-1.78-.77-.8-.34-.79.34-1.78.77-.99-1.67-.44-.74-.84-.19-1.9-.43.18-1.96.08-.85-.56-.65L3.67 12l1.29-1.48.56-.65-.09-.86-.18-1.94 1.9-.43.84-.19.44-.74.99-1.68 1.78.77.8.34.79-.34 1.78-.77.99 1.68.44.74.84.19 1.9.43-.18 1.95-.08.85.56.65 1.29 1.47-1.28 1.48z"></path><path d="m10.09 13.75-2.32-2.33-1.48 1.49 3.8 3.81 7.34-7.36-1.48-1.49z"></path></svg>
+                                    </div>
+                                    <div class="sub-skill-title-div">
+                                        <h3>Git</h3>
+                                        <span>Advanced</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="selection-right">
+                                <div class="sub-skill">
+                                    <div class="icon-div">
+                                        <!-- <i class="material-icons md-light my-icon">verifiedoutlined</i> -->
+                                        <svg fill="white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M23 11.99 20.56 9.2l.34-3.69-3.61-.82L15.4 1.5 12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 11.99l2.44 2.79-.34 3.7 3.61.82 1.89 3.2 3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69 2.44-2.8zm-3.95 1.48-.56.65.08.85.18 1.95-1.9.43-.84.19-.44.74-.99 1.68-1.78-.77-.8-.34-.79.34-1.78.77-.99-1.67-.44-.74-.84-.19-1.9-.43.18-1.96.08-.85-.56-.65L3.67 12l1.29-1.48.56-.65-.09-.86-.18-1.94 1.9-.43.84-.19.44-.74.99-1.68 1.78.77.8.34.79-.34 1.78-.77.99 1.68.44.74.84.19 1.9.43-.18 1.95-.08.85.56.65 1.29 1.47-1.28 1.48z"></path><path d="m10.09 13.75-2.32-2.33-1.48 1.49 3.8 3.81 7.34-7.36-1.48-1.49z"></path></svg>
+                                    </div>
+                                    <div class="sub-skill-title-div">
+                                        <h3>CSS</h3>
+                                        <span>Intermediate</span>
+                                    </div>
+                                </div>
+                                <div class="sub-skill">
+                                    <div class="icon-div"> 
+                                        <!-- <i class="material-icons md-light my-icon">verifiedoutlined</i> -->
+                                        <svg fill="white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M23 11.99 20.56 9.2l.34-3.69-3.61-.82L15.4 1.5 12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 11.99l2.44 2.79-.34 3.7 3.61.82 1.89 3.2 3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69 2.44-2.8zm-3.95 1.48-.56.65.08.85.18 1.95-1.9.43-.84.19-.44.74-.99 1.68-1.78-.77-.8-.34-.79.34-1.78.77-.99-1.67-.44-.74-.84-.19-1.9-.43.18-1.96.08-.85-.56-.65L3.67 12l1.29-1.48.56-.65-.09-.86-.18-1.94 1.9-.43.84-.19.44-.74.99-1.68 1.78.77.8.34.79-.34 1.78-.77.99 1.68.44.74.84.19 1.9.43-.18 1.95-.08.85.56.65 1.29 1.47-1.28 1.48z"></path><path d="m10.09 13.75-2.32-2.33-1.48 1.49 3.8 3.81 7.34-7.36-1.48-1.49z"></path></svg>
+                                    </div>
+                                    <div class="sub-skill-title-div">
+                                        <h3>ReactJs</h3>
+                                        <span>Basic</span>
+                                    </div>
+                                </div>
+                                <div class="sub-skill">
+                                    <div class="icon-div">
+                                        <!-- <i class="material-icons md-light my-icon">verifiedoutlined</i> -->
+                                        <svg fill="white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M23 11.99 20.56 9.2l.34-3.69-3.61-.82L15.4 1.5 12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 11.99l2.44 2.79-.34 3.7 3.61.82 1.89 3.2 3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69 2.44-2.8zm-3.95 1.48-.56.65.08.85.18 1.95-1.9.43-.84.19-.44.74-.99 1.68-1.78-.77-.8-.34-.79.34-1.78.77-.99-1.67-.44-.74-.84-.19-1.9-.43.18-1.96.08-.85-.56-.65L3.67 12l1.29-1.48.56-.65-.09-.86-.18-1.94 1.9-.43.84-.19.44-.74.99-1.68 1.78.77.8.34.79-.34 1.78-.77.99 1.68.44.74.84.19 1.9.43-.18 1.95-.08.85.56.65 1.29 1.47-1.28 1.48z"></path><path d="m10.09 13.75-2.32-2.33-1.48 1.49 3.8 3.81 7.34-7.36-1.48-1.49z"></path></svg>
+                                    </div>
+                                    <div class="sub-skill-title-div">
+                                        <h3>Figma</h3>
+                                        <span>Intermediate</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="backend-div skill-block">
+                        <h3 class="sub-skill-title">Backend Developer</h3>
+                        <div class="skills-set">
+                            <div class="selection-left">
+                                <div class="sub-skill">
+                                    <div class="icon-div">     
+                                        <!-- <i class="material-icons md-light my-icon">verifiedoutlined</i>-->
+                                        <svg fill="white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M23 11.99 20.56 9.2l.34-3.69-3.61-.82L15.4 1.5 12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 11.99l2.44 2.79-.34 3.7 3.61.82 1.89 3.2 3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69 2.44-2.8zm-3.95 1.48-.56.65.08.85.18 1.95-1.9.43-.84.19-.44.74-.99 1.68-1.78-.77-.8-.34-.79.34-1.78.77-.99-1.67-.44-.74-.84-.19-1.9-.43.18-1.96.08-.85-.56-.65L3.67 12l1.29-1.48.56-.65-.09-.86-.18-1.94 1.9-.43.84-.19.44-.74.99-1.68 1.78.77.8.34.79-.34 1.78-.77.99 1.68.44.74.84.19 1.9.43-.18 1.95-.08.85.56.65 1.29 1.47-1.28 1.48z"></path><path d="m10.09 13.75-2.32-2.33-1.48 1.49 3.8 3.81 7.34-7.36-1.48-1.49z"></path></svg>
+                                    </div>
+                                    <div class="sub-skill-title-div">
+                                        <h3>NodeJs</h3>
+                                        <span>Intermediate</span>
+                                    </div>
+                                </div>
+                                <div class="sub-skill">
+                                    <div class="icon-div">   
+                                        <!-- <i class="material-icons md-light my-icon">verifiedoutlined</i> -->
+                                        <svg fill="white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M23 11.99 20.56 9.2l.34-3.69-3.61-.82L15.4 1.5 12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 11.99l2.44 2.79-.34 3.7 3.61.82 1.89 3.2 3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69 2.44-2.8zm-3.95 1.48-.56.65.08.85.18 1.95-1.9.43-.84.19-.44.74-.99 1.68-1.78-.77-.8-.34-.79.34-1.78.77-.99-1.67-.44-.74-.84-.19-1.9-.43.18-1.96.08-.85-.56-.65L3.67 12l1.29-1.48.56-.65-.09-.86-.18-1.94 1.9-.43.84-.19.44-.74.99-1.68 1.78.77.8.34.79-.34 1.78-.77.99 1.68.44.74.84.19 1.9.43-.18 1.95-.08.85.56.65 1.29 1.47-1.28 1.48z"></path><path d="m10.09 13.75-2.32-2.33-1.48 1.49 3.8 3.81 7.34-7.36-1.48-1.49z"></path></svg>
+                                    </div>
+                                    <div class="sub-skill-title-div">
+                                        <h3>MongoDB</h3>
+                                        <span>Advanced</span>
+                                    </div>
+                                </div>
+                                <div class="sub-skill">
+                                    <div class="icon-div"> 
+                                        <!-- <i class="material-icons md-light my-icon">verifiedoutlined</i> -->
+                                        <svg fill="white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M23 11.99 20.56 9.2l.34-3.69-3.61-.82L15.4 1.5 12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 11.99l2.44 2.79-.34 3.7 3.61.82 1.89 3.2 3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69 2.44-2.8zm-3.95 1.48-.56.65.08.85.18 1.95-1.9.43-.84.19-.44.74-.99 1.68-1.78-.77-.8-.34-.79.34-1.78.77-.99-1.67-.44-.74-.84-.19-1.9-.43.18-1.96.08-.85-.56-.65L3.67 12l1.29-1.48.56-.65-.09-.86-.18-1.94 1.9-.43.84-.19.44-.74.99-1.68 1.78.77.8.34.79-.34 1.78-.77.99 1.68.44.74.84.19 1.9.43-.18 1.95-.08.85.56.65 1.29 1.47-1.28 1.48z"></path><path d="m10.09 13.75-2.32-2.33-1.48 1.49 3.8 3.81 7.34-7.36-1.48-1.49z"></path></svg>
+                                    </div>
+                                    <div class="sub-skill-title-div">
+                                        <h3>Firebase</h3>
+                                        <span>Basic</span>
+                                    </div>
+                                </div>
+                            </div>
 
-                    </div>
-
-
-
-
-                    
-                    
-                    
-                    <!-- <div class="my-expertise">
-                        <img class="tech-logo" src="./components/JS-logo.png" alt="JS logo">
-                        <div>
-                            <p class="tech-name">JavaScript</p>
-                            <p class="tech-description">
-                                I have over 1 year of experience as a JavaScript developer. I spent most of this time
-                                building applications with NodeJs and express. I also have experience with version
-                                control such as Git.
-                            </p>
+                            <div class="selection-right">
+                                <div class="sub-skill">
+                                    <div class="icon-div">
+                                        <!-- <i class="material-icons md-light my-icon">verifiedoutlined</i> -->
+                                        <svg fill="white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M23 11.99 20.56 9.2l.34-3.69-3.61-.82L15.4 1.5 12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 11.99l2.44 2.79-.34 3.7 3.61.82 1.89 3.2 3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69 2.44-2.8zm-3.95 1.48-.56.65.08.85.18 1.95-1.9.43-.84.19-.44.74-.99 1.68-1.78-.77-.8-.34-.79.34-1.78.77-.99-1.67-.44-.74-.84-.19-1.9-.43.18-1.96.08-.85-.56-.65L3.67 12l1.29-1.48.56-.65-.09-.86-.18-1.94 1.9-.43.84-.19.44-.74.99-1.68 1.78.77.8.34.79-.34 1.78-.77.99 1.68.44.74.84.19 1.9.43-.18 1.95-.08.85.56.65 1.29 1.47-1.28 1.48z"></path><path d="m10.09 13.75-2.32-2.33-1.48 1.49 3.8 3.81 7.34-7.36-1.48-1.49z"></path></svg>
+                                    </div>
+                                    <div class="sub-skill-title-div">
+                                        <h3>Java</h3>
+                                        <span>Intermediate</span>
+                                    </div>
+                                </div>
+                                <div class="sub-skill">
+                                    <div class="icon-div"> 
+                                        <!-- <i class="material-icons md-light my-icon">verifiedoutlined</i> -->
+                                        <svg fill="white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M23 11.99 20.56 9.2l.34-3.69-3.61-.82L15.4 1.5 12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 11.99l2.44 2.79-.34 3.7 3.61.82 1.89 3.2 3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69 2.44-2.8zm-3.95 1.48-.56.65.08.85.18 1.95-1.9.43-.84.19-.44.74-.99 1.68-1.78-.77-.8-.34-.79.34-1.78.77-.99-1.67-.44-.74-.84-.19-1.9-.43.18-1.96.08-.85-.56-.65L3.67 12l1.29-1.48.56-.65-.09-.86-.18-1.94 1.9-.43.84-.19.44-.74.99-1.68 1.78.77.8.34.79-.34 1.78-.77.99 1.68.44.74.84.19 1.9.43-.18 1.95-.08.85.56.65 1.29 1.47-1.28 1.48z"></path><path d="m10.09 13.75-2.32-2.33-1.48 1.49 3.8 3.81 7.34-7.36-1.48-1.49z"></path></svg>
+                                    </div>
+                                    <div class="sub-skill-title-div">
+                                        <h3>MySQL</h3>
+                                        <span>Basic</span>
+                                    </div>
+                                </div>
+                                <div class="sub-skill">
+                                    <div class="icon-div">
+                                        <!-- <i class="material-icons md-light my-icon">verifiedoutlined</i> -->
+                                        <svg fill="white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M23 11.99 20.56 9.2l.34-3.69-3.61-.82L15.4 1.5 12 2.96 8.6 1.5 6.71 4.69 3.1 5.5l.34 3.7L1 11.99l2.44 2.79-.34 3.7 3.61.82 1.89 3.2 3.4-1.47 3.4 1.46 1.89-3.19 3.61-.82-.34-3.69 2.44-2.8zm-3.95 1.48-.56.65.08.85.18 1.95-1.9.43-.84.19-.44.74-.99 1.68-1.78-.77-.8-.34-.79.34-1.78.77-.99-1.67-.44-.74-.84-.19-1.9-.43.18-1.96.08-.85-.56-.65L3.67 12l1.29-1.48.56-.65-.09-.86-.18-1.94 1.9-.43.84-.19.44-.74.99-1.68 1.78.77.8.34.79-.34 1.78-.77.99 1.68.44.74.84.19 1.9.43-.18 1.95-.08.85.56.65 1.29 1.47-1.28 1.48z"></path><path d="m10.09 13.75-2.32-2.33-1.48 1.49 3.8 3.81 7.34-7.36-1.48-1.49z"></path></svg>
+                                    </div>
+                                    <div class="sub-skill-title-div">
+                                        <h3>Spring</h3>
+                                        <span>Basic</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="my-expertise">
-                        <img class="tech-logo" src="./components/java-logo.png" alt="Java">
-                        <div>
-                            <p class="tech-name">Java</p>
-                            <p class="tech-description">
-                                With web-development being my primary area of focus, I have a decent understanding of
-                                Java programming language. With my knowledge and programming skills, I strive to make
-                                applications to solve real-world problems.
-                            </p>
-                        </div>
-                    </div> -->
-                <!-- </div> -->
             </div>
-            <!-- <div class="skills-img">
-                <img src="./components/coding-skills.png" alt="coding skills">
-            </div> -->
-
         </div>
     </section>
 
     <section id="Projects">
-        <div class="content-header">
-            <h2>Projects</h2>
-        </div>
         <div class="project-content-parent section">
-            <img class="title_img" src="./components/project-header.png" alt="Some things I've built">
+            <div class="content-title project-title">
+                <div>
+                    <p>Projects</p>
+                </div>
+                <div class="inner-bar">
+                    <div class="inner-bar-blue"></div>
+                    <div class="inner-bar-dark"></div>
+                </div>
+            </div>
             <div class="proj_parent">
                 <div class="project-content">
                     <div class="project-showcase">
-                        <img class="showcase-img" src="./components/product-img.png" alt="product image">
+                        <img class="showcase-img" src="./components/Project_01.png" alt="product image">
                         <div class="project-text">
                             <p class="featured-project p-styled p-odd">Featured Project</p>
                             <h2 class="p-styled p-odd">To-do List Application</h2>
                             <p class="project-desc p-styled p-odd">
-                                This was among my first web development projects. It is a to-do list application which
-                                uses
-                                cookies to store the state of the application on the browser session.
+                                The application is a to-do-list tool that utilizes cookies to locally store data within the user's browser. This functionality enhances the accessibility and usability of the application, as users can easily pick up where they left off without having to worry about losing their data.
                             </p>
+                            <div class="project-links">
+                                <a href="https://todo.kraparesh.co/" target="_blank" class="href"><i class="fa-solid fa-arrow-up-right-from-square social-icons no-effect-btn"></i></a>
+                                <a href="https://github.com/KrAparesh/To-Do-List" target="_blank" class="href"><i class="fa-brands fa-github social-icons no-effect-btn"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="project-content">
                     <div class="project-showcase project-wrap">
-                        <img class="showcase-img" src="./components/product-img.png" alt="product image">
+                        <img class="showcase-img" src="./components/Project_02.png" alt="product image">
                         <div class="project-text">
                             <p class="featured-project p-styled p-even">Featured Project</p>
-                            <h2 class="p-styled p-even">Checkmate Discord Bot Application</h2>
+                            <h2 class="p-styled p-even">Health Plus</h2>
                             <p class="project-desc p-styled p-even">
-                                This application has been designed for my university’s chess club to provide them with
-                                an
-                                online chess experience. The application enables them to get keep a track of their
-                                scores
-                                and compete with other players.
+                                I've worked on the backend of a web-app project which aims to digitalize the medical sector, specifically focusing on streamlining the flow of
+                                prescriptions among medical institutions.
                             </p>
+                            <div class="project-links p-even-link">
+                                <a href="https://devfolio.co/projects/health-plus-6711" target="_blank" class="href"><i class="fa-solid fa-arrow-up-right-from-square social-icons no-effect-btn"></i></a>
+                                <a href="https://github.com/KrAparesh/HealthPlus" target="_blank" class="href"><i class="fa-brands fa-github social-icons no-effect-btn"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="project-content">
                     <div class="project-showcase">
-                        <img class="showcase-img" src="./components/product-img.png" alt="product image">
+                        <img class="showcase-img" src="./components/image-03.png" alt="product image">
                         <div class="project-text">
                             <p class="featured-project p-styled p-odd">Featured Project</p>
-                            <h2 class="p-styled p-odd">Automated Notification Services</h2>
+                            <h2 class="p-styled p-odd">Weird-Brains Discord Application</h2>
                             <p class="project-desc p-styled p-odd">
-                                I’ve worked on a service that fetches updates from public forums and university
-                                websites.
-                                The goal was to send updates and alerts to users through their desired mode of
-                                communication.
+                                This discord bot enables our community members to comprehensively monitor and track their progress in development. The
+                                bot empowers users to effortlessly stay on top of their projects and receive real-time updates on their progress,
+                                facilitating a more streamlined and efficient development process.
                             </p>
+                            <div class="project-links">
+                                <a href="https://wb-discord-bot.onrender.com/" target="_blank" class="href"><i class="fa-solid fa-arrow-up-right-from-square social-icons no-effect-btn"></i></a>
+                                <a href="https://github.com/Weird-Brains/WB-Discord-Bot" target="_blank" class="href"><i class="fa-brands fa-github social-icons no-effect-btn"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -233,18 +344,23 @@
     </section>
 
     <section id="Hobbies">
-        <div class="content-header">
-            <h2>Hobbies</h2>
-        </div>
         <div class="project-content-parent section">
-            <img class="title_img" src="./components/Jolly Times.png" alt="Jolly Times">
+            <div class="content-title project-title">
+                <div>
+                    <p>Hobbies</p>
+                </div>
+                <div class="inner-bar">
+                    <div class="inner-bar-blue"></div>
+                    <div class="inner-bar-dark"></div>
+                </div>
+            </div>
             <div class="proj_parent">
-                <div class="project-content">
+                <div class="project-content hobby-music-master-div">
                     <div class="project-showcase">
-                        <img class="showcase-img" src="./components/product-img.png" alt="product image">
-                        <div class="project-text">
-                            <h2 class="p-styled p-odd">Music Production</h2>
-                            <p class="project-desc p-styled p-odd">
+                        <!-- <img class="showcase-img" src="./components/music_01.jpeg" alt="product image"> -->
+                        <div class="project-text hobby-text">
+                            <h2 class="p-styled p-even">Music Production</h2>
+                            <p class="project-desc p-styled p-even">
                                 My passion for music is all time high. I enjoy listening to the symphony of nature which
                                 helps me to embrace my piano skills. I have made a couple of short piano covers for you
                                 to
@@ -257,9 +373,9 @@
                     </div>
                 </div>
                 <div class="project-content">
-                    <div class="project-showcase project-wrap">
+                    <div class="project-showcase project-wrap hobby-text-02">
                         <img class="showcase-img" src="./components/product-img.png" alt="product image">
-                        <div class="project-text">
+                        <div class="project-text hobby-text">
                             <h2 class="p-styled p-even">Blogging</h2>
                             <p class="project-desc p-styled p-even">
                                 Blogging can be a wonderful outlet for creativity and self-expression. I love to write
@@ -277,15 +393,11 @@
     </section>
 
     <section id="contact">
-        <div class="content-header">
-            <h2>Contact</h2>
-        </div>
         <div class="contact-details-parent section">
             <div class="contact-details">
                 <p class="wht-next">What's Next?</p>
                 <h2>Get In Touch</h2>
-                <p class="contact-desc">My inbox is always open to new opportunities and I believe we can do so much
-                    together. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+                <p class="contact-desc">I welcome new opportunities and am open to communication via my inbox. I am confident that we can achieve great things together. Whether you wish to inquire about something or simply want to greet me, I will do my utmost to respond promptly.
                 </p>
                 <a href="mailto:kraparesh@gmail.com"><button class="btn btn-resume btn-contact-me">Say Hello</button></a>
             </div>
