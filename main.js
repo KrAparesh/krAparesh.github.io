@@ -20,4 +20,26 @@ $(document).ready(() => {
 		});
 	});
 
-})
+    // $("ul").on('click', () => {
+    //     $("ul").toggleClass("ul_block");
+    //     $(".hamburger").toggleClass("opened");
+    //     $(".hamburger").setAttribute('aria-expanded', $(".hamburger").contains('opened'));
+    // })
+    
+    // $(".hamburger").on('click', () => {
+    //     $("ul").toggleClass("ul_block");
+    //     $(".hamburger").toggleClass("opened");
+    //     $(".hamburger").setAttribute('aria-expanded', $(".hamburger").contains('opened'));
+    // })
+
+});
+
+function myFunction() {
+    var x = document.querySelector(".nav-items");
+    var y = document.querySelector(".hamburger");
+    x.classList.toggle("ul_block");
+    // x.style.top = "0vh";
+    y.classList.toggle('opened');
+    y.setAttribute('aria-expanded', y.classList.contains('opened'));
+}
+

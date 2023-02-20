@@ -11,6 +11,7 @@
     --secondary-color: #62F9D5;
     --box-shadow-color: #131313;
     --site-background-color: #333333;
+    --site-width: 68rem;
 }
 
 body, html{
@@ -19,7 +20,7 @@ body, html{
 
 /* default classes */
 .section {
-    max-width: 68rem;
+    max-width: var(--site-width);
     margin: 0 auto;
     padding: 6rem;
 }
@@ -44,7 +45,7 @@ header {
 
 .navbar {
     display: flex;
-    width: 68rem;
+    width: var(--site-width);
     justify-content: space-between;
     align-items: center;
     height: 4rem;
@@ -87,17 +88,90 @@ li:hover {
     color: var(--text-color);
 }
 
-@media only screen and (max-width: 992px) {
-    .navbar {
-        padding: 0 2rem;
-    }
-    .nav-items {
-        width: 26rem;
+.ul_block {
+    display: block;
+}
+
+/* hamburger */
+.hamburger {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    cursor: pointer;
+    background: none;
+    border: none;
+    right: 0.5rem;
+    top: 0px;
+}
+
+.line {
+    fill: none;
+    stroke: white;
+    stroke-width: 4;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line1 {
+    stroke-dasharray: 60 207;
+    stroke-width: 4;
+}
+
+.line2 {
+    stroke-dasharray: 60 60;
+    stroke-width: 4;
+}
+
+.line3 {
+    stroke-dasharray: 60 207;
+    stroke-width: 4;
+}
+
+.opened .line1 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 4;
+}
+
+.opened .line2 {
+    stroke-dasharray: 1 60;
+    stroke-dashoffset: -30;
+    stroke-width: 4;
+}
+
+.opened .line3 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 4;
+}
+
+@media only screen and (max-width: 1366px) {
+    :root {
+        --site-width: 80vw;
     }
 }
 
+@media only screen and (max-width: 960px) {
+    
+    .hamburger {
+        display: flex;
+    }
 
-@media only screen and (max-width: 768px) {
+    .nav-items {
+        display: none;
+    }
+
+    .navbar {
+        width: 100%;
+    }
+
+    .ul_block {
+        top: 0;
+    }
+
+}
+
+
+/* @media only screen and (max-width: 768px) {
     header {
         display: none;
     }
@@ -109,7 +183,7 @@ li:hover {
     .section {
         padding: 6rem 3rem;
     }
-} 
+}  */
 
 
 /* Home page styling */
