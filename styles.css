@@ -509,16 +509,10 @@ header img {
 /* ================ Styling skills section =================== */
 
 
-#Skills {
-    height: 100lvh;
-
-}
-
 .skill-parent {
     display: flex;
     flex-direction: row;
-    height: 100%;
-    width: 100%;
+    width: var(--site-width);
     justify-content: space-around;
 }
 
@@ -533,7 +527,7 @@ header img {
     flex-direction: column;
     gap: 16px;
     height: 18rem;
-    width: 40%;
+    min-width: 22rem;
     border: 1px solid var(--secondary-color);
     background-color: #111;
     border-radius: 25px;
@@ -547,6 +541,7 @@ header img {
     justify-content: center;
     align-items: center;
     gap: 0.9rem;
+    min-width: 10rem;
 }
 
 .content-title span {   
@@ -611,6 +606,52 @@ header img {
 #Skills .content-title {
     margin-bottom: 5rem;
 }
+
+@media only screen and (max-width: 1000px) {
+    .skill-parent {
+        flex-direction: column;
+        max-width: 24rem;
+        gap: 4rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .skill-parent {
+        max-width: 20rem;
+    }
+
+    .skill-block {
+        min-width: 20rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .skill-parent {
+        max-width: 20rem;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .skill-content-title .wht-I-know {
+        font-size: 1.6rem;
+    }
+
+    .skill-content-title span {
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .skill-parent {
+        max-width: 19rem;
+    }
+    
+    .skill-block {
+        min-width: 19rem;
+    }
+
+}
+
 
 /* ==================== Styling project section ======================= */
 
