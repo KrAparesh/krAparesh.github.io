@@ -6,7 +6,7 @@
 
 
 :root {
-    --bg-color: #0A192F;
+    --bg-color: #0a192ffa;
     --text-color: #CCD6F6;
     --secondary-color: #62F9D5;
     --box-shadow-color: #131313;
@@ -45,34 +45,27 @@ header {
 
 .navbar {
     display: flex;
-    width: var(--site-width);
     justify-content: space-between;
+    width: var(--site-width);
     align-items: center;
-    height: 4rem;
+    min-height: 4rem;
     padding: 0 1rem;
     margin: 0 auto;
 }
 
 header img {
+    position: relative;
+    margin: 0.25rem 0;
     width: fit-content;
     height: 3rem;
+    z-index: 100;
 }
 
 .nav-items {
     font-family: 'Poppins', sans-serif;
     display: flex;
-    flex-direction: row;
     width: 30rem;
     justify-content: space-between;
-    align-items: center; 
-}
-
-li:hover {
-    cursor: pointer;
-}
-
-.navbar-components {
-    display: flex;
     align-items: center;
 }
 
@@ -81,6 +74,7 @@ li:hover {
     list-style-type: none;
     font-size: 1rem;
     padding: 0 12px;
+    cursor: pointer;
 }
 
 .nav-item{
@@ -88,15 +82,11 @@ li:hover {
     color: var(--text-color);
 }
 
-.ul_block {
-    display: block;
-}
-
 /* hamburger */
 .hamburger {
     display: none;
     position: fixed;
-    z-index: 10;
+    z-index: 50;
     cursor: pointer;
     background: none;
     border: none;
@@ -151,13 +141,25 @@ li:hover {
 }
 
 @media only screen and (max-width: 960px) {
+    .navbar {
+        display: block;
+    }
     
     .hamburger {
         display: flex;
     }
 
     .nav-items {
-        display: none;
+        /* display: none; */
+        position: absolute;
+        flex-direction: column;
+        height: 100lvh;
+        z-index: 20;
+        padding: 8rem 0;
+        top: -100lvh;
+        backdrop-filter: blur(64px);
+        transition: top 300ms ease-in-out;
+        background-color: #0a192ff0;
     }
 
     .navbar {
@@ -167,25 +169,10 @@ li:hover {
 
     .ul_block {
         top: 0;
+        /* display: flex; */
     }
 
 }
-
-
-/* @media only screen and (max-width: 768px) {
-    header {
-        display: none;
-    }
-
-    .left-sidebar, .right-sidebar {
-        display: none;
-    }
-
-    .section {
-        padding: 6rem 3rem;
-    }
-}  */
-
 
 /* Home page styling */
 
@@ -196,7 +183,7 @@ li:hover {
     justify-content: space-between;
     font-family: 'Poppins', sans-serif;
     align-items: center;
-    height: 100vh;
+    height: 100lvh;
     gap: 7%;
 }
 
@@ -214,17 +201,18 @@ li:hover {
 }
 
 .job-title {
-    font-size: 1.3rem;
-    color: var(--text-color);
-    opacity: 0.8;
+    font-size: 1rem;
+    color: var(--secondary-color);
+    opacity: 0.95;
     font-weight: 400;
 }
 
 .my-desc {
-    font-size: 1.05rem;
+    font-size: 1rem;
     color: var(--text-color);
     font-weight: 400;
     text-align: justify;
+    max-width: 80%;
 }
 
 #home h2 {
@@ -238,34 +226,6 @@ li:hover {
     display: flex;
     gap: 3rem;
 }
-
-@media only screen and (max-width: 992px) {
-    #home {
-        flex-direction: column;
-        row-gap: 5rem;
-    }
-    
-    .gif-circle {
-        height: 14rem;
-        width: 14rem;
-        border: 0.8rem solid #0e254698;;
-    }
-    
-    #home h2 {
-        font-size: 2rem;
-    }
-    
-    .text-desc {
-        max-width: 40rem;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    #home {
-        padding-top: 8rem;
-    }
-}
-
 
 .btn{
     color: var(--secondary-color);
@@ -289,11 +249,96 @@ li:hover {
     padding: 0.55rem 0.8rem;
 }
 
+@media only screen and (max-width: 1220px) {
+    #home h2 {
+        font-size: 3.5rem;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    #home h2 {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    #home {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 75px;
+    }
+    
+    #home .home_desc {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    #home .text-desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #home .gif-circle {
+        width: 16rem;
+        border: 10px solid #0e254698;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    #home .text-desc {
+        max-width: 100lvw;
+    }
+
+    #home .gif-circle {
+        width: 12rem;
+        border: 8px solid #0e254698;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    #home h2 {
+        font-size: 1.95rem;
+    }
+
+    #home .job-title {
+        font-size: 0.8rem;
+    }
+
+    #home .my-desc {
+        font-size: 0.85rem;
+    }
+}
+
+@media only screen and (max-width: 280px) {
+    #home h2 {
+        font-size: 1.7rem;
+    }
+
+    #home .job-title {
+        font-size: 0.7rem;
+    }
+
+    #home .my-desc {
+        font-size: 0.8rem;
+    }
+
+    #home .gif-circle {
+        width: 10rem;
+    }
+}
+
+
 
 /* ****************************ABOUT ME******************************* */
 
 #about {
-    height: 100vh;
+    height: 100lvh;
     display: flex;
 }
 
@@ -439,7 +484,7 @@ li:hover {
 
 
 #Skills {
-    height: 100vh;
+    height: 100lvh;
 
 }
 
@@ -544,7 +589,7 @@ li:hover {
 /* ==================== Styling project section ======================= */
 
 #Projects {
-    height: 200vh;
+    height: 200lvh;
 }
 
 
@@ -644,6 +689,7 @@ li:hover {
     bottom: 22rem;
     height: 0;
     padding-left: 1.5rem;
+    z-index: 10;
 }
 
 .left-sidebar li {
@@ -669,6 +715,7 @@ li:hover {
     height: 0;
     bottom: 24rem;
     right: 1.5rem;
+    z-index: 10;
 }
 
 .right-sidebar li{
@@ -695,6 +742,12 @@ li:hover {
 .right-social-icon:hover{
     transform: translateY(-3px);
     color: var(--secondary-color);
+}
+
+@media only screen and (max-width: 800px){
+    .left-sidebar, .right-sidebar {
+        display: none;
+    }
 }
 
 /* Hobbies page styling */
@@ -777,7 +830,7 @@ li:hover {
 
 
 .contact-details-parent{
-    height: 100vh;
+    height: 100lvh;
     display: flex;
     justify-content: center;
     align-items: center;
