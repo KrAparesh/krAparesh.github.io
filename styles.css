@@ -655,11 +655,6 @@ header img {
 
 /* ==================== Styling project section ======================= */
 
-#Projects {
-    height: 200lvh;
-}
-
-
 .project-content {
     display: flex;
     height: inherit;
@@ -738,6 +733,44 @@ header img {
 .p-even-link {
     flex-direction: row-reverse;
 }
+
+
+@media only screen and (max-width: 1366px) {
+    .project-showcase {
+        min-width: var(--site-width);   
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .project-showcase {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-text h2 {
+        font-size: 1.25rem;
+    }
+    
+    .p-odd {
+        text-align: left;
+    }
+
+    .p-even-link {
+        justify-content: flex-end;
+    }
+    .project-text {
+        margin-top: 2rem;
+        max-width: 90%;
+    }
+
+    .project-desc {
+        text-align: justify;
+    }
+    .showcase-img {
+        max-width: 60%;
+    }
+}
+
 
 /* ============ SIDE BARS STYLING ================= */
 
@@ -850,48 +883,6 @@ header img {
     border-radius: 8px;
 }
 
-@media only screen and (max-width: 768px) {
-    .project-showcase {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .project-text h2 {
-        font-size: 1.25rem;
-    }
-    
-    .p-odd {
-        text-align: start
-    }
-    
-    .project-text {
-        margin-top: 2rem;
-        max-width: 90%;
-    }
-
-    .project-desc {
-        text-align: justify;
-    }
-    .showcase-img {
-        max-width: 60%;
-    }
-}
-
-@media only screen and (max-width: 640px) {
-    .proj_parent {
-        display: grid;
-        gap: 3rem;
-    }
-    .project-content {
-        margin-bottom: 1rem;
-    }
-    .showcase-img {
-        max-width: 90%;
-    }
-    .project-text {
-        max-width: 100%;
-    }
-}
 
 /* Contact Details */
 
