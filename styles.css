@@ -82,6 +82,13 @@ header img {
     color: var(--text-color);
 }
 
+nav ul li a.active {
+    color: var(--secondary-color);
+}
+nav ul li a:hover {
+    color: var(--secondary-color);
+}
+
 /* hamburger */
 .hamburger {
     display: none;
@@ -744,10 +751,6 @@ header img {
     .project-showcase {
         min-width: var(--site-width);   
     }
-
-    .project-updated-title p{
-        
-    }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -874,7 +877,7 @@ header img {
 }
 
 .hobby-btn-blog{
-    margin-top: 1.5rem;
+    margin-top: 2rem;
 }
 
 .hobby-text {
@@ -887,7 +890,7 @@ header img {
 
 .hobby-music-master-div {
     background-image: url("./components/music_02.jpeg");
-    background-size: cover;
+    /* background-size: cover; */
     background-repeat: no-repeat;
     height: 18rem;
     border-radius: 8px;
