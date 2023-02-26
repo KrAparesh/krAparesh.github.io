@@ -878,17 +878,60 @@ header img {
 
 .hobby-music-master-div {
     background-image: url("./components/music_02.jpeg");
+    background-size: cover;
     background-repeat: no-repeat;
     height: 18rem;
     border-radius: 8px;
 }
 
 
+@media only screen and (max-width: 1000px) {
+    .hobby-text {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .hobby-music-master-div {
+        min-height: 20rem;
+    }
+
+    .hobby-showcase-img {
+        padding-top: 2rem;
+    }
+}
+
+@media only screen and (max-width: 730px) {
+
+    .hobby-text p {
+        font-size: 0.9rem;
+    }
+
+    .hobby-btn button{
+        font-size: 0.75rem;
+    }
+
+}
+
+@media only screen and (max-width: 512px) {
+    .hobby-text h2 {
+        font-size: 1.2rem;
+    }
+
+    .hobby-text p {
+        font-size: 0.85rem;
+    }
+
+    .hobby-music-master-div {
+        min-height: 22rem;
+    }
+}
+
 /* Contact Details */
 
 
 .contact-details-parent{
-    height: 100lvh;
+    /* height: 100lvh; */
     display: flex;
     justify-content: center;
     align-items: center;
