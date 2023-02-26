@@ -352,7 +352,7 @@ header img {
 }
 
 .content-title p {
-    display: flex;
+    /* display: flex; */
     font-size: 2rem;
     color: var(--text-color);
     font-family: 'Poppins', sans-serif;
@@ -739,6 +739,10 @@ header img {
     .project-showcase {
         min-width: var(--site-width);   
     }
+
+    .project-updated-title p{
+        
+    }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -972,7 +976,7 @@ header img {
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1000px) {
     .contact-details {
         margin-bottom: 7rem;
     }
@@ -983,6 +987,26 @@ header img {
 
     .contact-desc {
         text-align: justify;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .contact-details {
+        min-width: 25rem;
+    }
+}
+
+@media only screen and (max-width: 510px) {
+    .contact-details {
+        min-width: 20rem;
+    }
+
+    .contact-details p{
+        font-size: 0.9rem;
+    }
+
+    .contact-details h2 {
+        font-size: 2.1rem;
     }
 }
 
