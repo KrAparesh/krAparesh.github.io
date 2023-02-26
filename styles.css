@@ -935,7 +935,7 @@ header img {
 
 
 .contact-details-parent{
-    /* height: 100lvh; */
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1009,6 +1009,70 @@ header img {
         font-size: 2.1rem;
     }
 }
+
+/* ========== Footer Section ========== */
+
+#footer {
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer p {
+    font-size: 0.9rem;
+    color: var(--text-color);
+    opacity: 0.7;
+    font-family: 'Inter';
+    text-align: center;
+}
+
+#footer i {
+    color: var(--secondary-color);
+}
+
+#footer ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+
+#footer li i {
+    font-size: 1.4rem;
+    transform: none;
+    /* translate: none; */
+    color: var(--text-color);
+}
+
+#footer .footer-nav-logo {
+    width: 3.5rem;
+}
+
+#footer .socials-list{
+    max-height: 5rem;
+    min-width: 100%;
+    margin: auto;
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+
+    #footer p {
+        display: none;
+    }
+
+    #footer .socials-list {
+        display: flex;
+    }
+}
+
+
+
+
+/* ========== Scroll Bar =============== */
 
 ::-webkit-scrollbar {
     width: 0.5rem; 
