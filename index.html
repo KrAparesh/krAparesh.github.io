@@ -5,20 +5,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+   
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Welcome to Aparesh Kumar's developer portfolio. The streamlined look and simple navigation of my portfolio demonstrate my breadth of expertise across a range of industries, including web development, graphic design, and content creation. My portfolio is a great place to start if you want to hire me for your next project or just want to learn more about my work. Discover everything that I have to offer by visiting my portfolio right away!">
+    <meta name="author" content="Aparesh Kumar">
+    
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+	<meta property="og:site_name" content="Aparesh Kumar" /> <!-- website name -->
+	<meta property="og:site" content="https://www.kraparesh.co/" /> <!-- website link -->
+	<meta property="og:title" content="Developer portfolio of Aparesh Kumar"/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="If you're looking for a demonstration of unique skills and abilities, go no farther than Aparesh Kumar's impressive personal portfolio. The streamlined look and simple navigation of their portfolio demonstrate their breadth of expertise across a range of industries, including web development, graphic design, and content creation. Aparesh Kumar's portfolio is a great place to start if you want to hire him for your next project or just want to learn more about his work. Discover everything that he has to offer by visiting their portfolio right away!" /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="./components/profile_pic.webp" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="https://www.kraparesh.co/" /> <!-- where do you want your post to link to -->
+	<meta property="og:type" content="article" />
+
+
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="shortcut icon" href="./components/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Montserrat:wght@900&family=Poppins:wght@400;600;700&family=Roboto&family=Roboto+Mono:wght@300;400;500&family=Ubuntu:ital@0;1&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Montserrat:wght@900&family=Poppins:wght@400;600;700&family=Roboto&family=Roboto+Mono:wght@300;400;500&family=Ubuntu:ital@0;1&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/919e7ddcdd.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 
     <title>Aparesh Kumar</title>
 </head>
@@ -32,7 +40,7 @@
                 <li><a class="page-scroll nav-item" href="#Skills">Skills</a></li>
                 <li><a class="page-scroll nav-item" href="#Projects">Projects</a></li>
                 <li><a class="page-scroll nav-item" href="#contact">Contact</a></li>
-                <li><a href="#" class="btn btn-resume nav-btn">Resume</a></li>
+                <li><a href="./index.html" class="btn btn-resume nav-btn">Resume</a></li>
             </ul>
 
             <button class="hamburger" onclick="myFunction()" aria-label="Main Menu">
@@ -48,15 +56,15 @@
 
     <div class="left-sidebar">
         <ul class="socials-list">
-            <li><a href="https://www.github.com/krAparesh" target="_blank" class="href"><i
+            <li><a aria-label="GitHub" href="https://www.github.com/krAparesh" target="_blank" class="href"><i
                         class="fa-brands fa-github social-icons"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/krAparesh" target="_blank" class="href"><i
+            <li><a aria-label="LinkedIn"  href="https://www.linkedin.com/in/krAparesh" target="_blank" class="href"><i
                         class="fa-brands fa-linkedin social-icons"></i></a></li>
-            <li><a href="https://www.instagram.com/aparesh_kr" target="_blank" class="href"><i
+            <li><a aria-label="Instagram"  href="https://www.instagram.com/aparesh_kr" target="_blank" class="href"><i
                         class="fa-brands fa-instagram social-icons"></i></a></li>
-            <li><a href="https://twitter.com/Aparesh20" target="_blank" class="href"><i
+            <li><a aria-label="Twitter"  href="https://twitter.com/Aparesh20" target="_blank" class="href"><i
                         class="fa-brands fa-twitter social-icons"></i></a></li>
-            <li><img class="no-effect" src="./components/stroke-left.png" alt="stroke" srcset=""></li>
+            <li><img class="no-effect" src="./components/stroke-left.webp" alt="stroke" srcset=""></li>
         </ul>
     </div>
 
@@ -64,7 +72,7 @@
         <ul>
             <li class="right-social-icon"><a class="social-icons"
                     href="mailto:kraparesh@gmail.com">kraparesh@gmail.com</a></li>
-            <li class="no-effect"><img src="./components/stroke-left.png" alt="stroke"></li>
+            <li class="no-effect"><img src="./components/stroke-left.webp" alt="stroke"></li>
         </ul>
     </div>
 
@@ -78,7 +86,7 @@
                     solve real-world problems.</p>
             </div>
             <div class="home_buttons">
-                <a href="" class="btn btn-resume">
+                <a href="./index.html" class="btn btn-resume">
                     Resume
                 </a>
             </div>
@@ -112,7 +120,7 @@
                 </div>
                 <div class="wrapper">
                     <div class="bdr"></div>
-                    <img class="my_pic" src="./components/profile_pic.jpg" alt="My pic">
+                    <img class="my_pic" src="./components/profile_pic.webp" alt="My pic">
                     <div class="overlay_pic my_pic"></div>
                 </div>
             </div>
@@ -366,7 +374,7 @@
             <div class="proj_parent">
                 <div class="project-content">
                     <div class="project-showcase">
-                        <img class="showcase-img" src="./components/Project_01.png" alt="product image">
+                        <img class="showcase-img" src="./components/Project_01.webp" alt="product image">
                         <div class="project-text">
                             <p class="featured-project p-styled p-odd">Featured Project</p>
                             <h2 class="p-styled p-odd">To-do List Application</h2>
@@ -387,7 +395,7 @@
                 </div>
                 <div class="project-content">
                     <div class="project-showcase project-wrap">
-                        <img class="showcase-img" src="./components/Project_02.png" alt="product image">
+                        <img class="showcase-img" src="./components/Project_02.webp" alt="product image">
                         <div class="project-text">
                             <p class="featured-project p-styled p-even">Featured Project</p>
                             <h2 class="p-styled p-even">Health Plus</h2>
@@ -407,7 +415,7 @@
                 </div>
                 <div class="project-content">
                     <div class="project-showcase">
-                        <img class="showcase-img" src="./components/wb.jpg" alt="product image">
+                        <img class="showcase-img" src="./components/wb.webp" alt="product image">
                         <div class="project-text ">
                             <p class="featured-project p-styled p-odd">Featured Project</p>
                             <h2 class="p-styled p-odd">Weird-Brains Discord Application</h2>
@@ -461,7 +469,7 @@
                 </div>
                 <div class="project-content">
                     <div class="project-showcase project-wrap hobby-text-02">
-                        <img class="showcase-img hobby-showcase-img" src="./components/product-img.png" alt="product image">
+                        <img class="showcase-img hobby-showcase-img" src="./components/product-img.webp" alt="product image">
                         <div class="project-text hobby-text">
                             <h2 class="p-styled p-even">Blogging</h2>
                             <p class="project-desc p-styled p-even">
@@ -509,6 +517,8 @@
                         class="fa-brands fa-twitter social-icons"></i></a></li>
         </ul>
     </section>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src="main.js"></script>
 </body>
 
