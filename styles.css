@@ -783,7 +783,6 @@ nav ul li a:hover {
     }
 }
 
-
 /* ============ SIDE BARS STYLING ================= */
 
 /* Side bars styling */
@@ -890,7 +889,7 @@ nav ul li a:hover {
 
 .hobby-music-master-div {
     background-image: url("./components/music_02.webp");
-    /* background-size: cover; */
+    background-size: cover;
     background-repeat: no-repeat;
     height: 18rem;
     border-radius: 8px;
@@ -927,7 +926,7 @@ nav ul li a:hover {
 
 @media only screen and (max-width: 512px) {
     .hobby-text h2 {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 
     .hobby-text p {
@@ -935,9 +934,12 @@ nav ul li a:hover {
     }
 
     .hobby-music-master-div {
-        min-height: 22rem;
+        min-height: 24rem;
     }
+
 }
+
+
 
 /* Contact Details */
 
@@ -1010,11 +1012,11 @@ nav ul li a:hover {
     }
 
     .contact-details p{
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     .contact-details h2 {
-        font-size: 2.1rem;
+        font-size: 2.5rem;
     }
 }
 
