@@ -1,2 +1,1 @@
-# Welcome to my Portfolio!
-Thank you for stopping by, have a good time :)
+<img src="https://kraparesh.co/components/readMe.svg" height="250px" width="100%"/>
