@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="100%" height="100%">
+   <defs>
+    <style>
+     <![CDATA[
+       @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@400;700&display=swap');
+       @import url('https://kit.fontawesome.com/919e7ddcdd.js');
+     ]]>
+
+
+    </style>
+  </defs>
+  <rect x="0" y="0" width="100%" height="100%" style="fill:#0a192ffa;" />
+    <text x="45%" y="3rem" style="fill: #62F9D5; font-size: 1.1rem; font-family: Poppins;">Hi! My name is</text>
+    <text x="32%" y="7rem" style="fill: #CCD6F6; font-size: 3.5rem; font-family: Poppins; font-weight: 700;">Aparesh Kumar</text>
+    <text x="31%" y="11rem" style="fill: #CCD6F6; font-size: 1.1rem; font-family: Poppins;">
+        An aspiring <tspan style="fill: #62F9D5">software engineer</tspan> and a 
+        <tspan style="fill: #62F9D5">web developer</tspan>.
+    </text>
+    <text x="25%" y="12.5rem" style="fill: #CCD6F6; font-size: 1.1rem; font-family: Poppins;">
+        I am passionate about building
+      innovative and user-friendly applications 
+    </text>
+    <text x="40%" y="14rem" style="fill: #CCD6F6; font-size: 1.1rem; font-family: Poppins;">
+        that solve real-world problems.
+    </text>
+
+    <path d="M 300 270 H 980" stroke="#FFFFFF" stroke-opacity="0.596078" stroke-width="3"
+        stroke-linecap="round" />
+
+   
+    
+</svg>
