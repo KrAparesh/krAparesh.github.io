@@ -1,18 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1920px" height="1080px">
-    <image xlink:href="Upper.png" />
-    <image xlink:href="L1.png" y="40%" width="100%" />
-    <image xlink:href="L2.png" x="31.9%" y="40%"/>
-    <image xlink:href="L2-1.png" x="38.8%" y="40%"/>
-    <image xlink:href="L3.png" x="45.6%" y="40%"/>
-    <image xlink:href="L4.png" x="55.25%" y="40%"/>
-    <image xlink:href="L5.png" x="62.1%" y="40%"/>
-    <image xlink:href="L7.png" x="31.5%" y="40%"/>
+    <image xlink:href="https://kraparesh.co/assets/Upper.png" />
+    <image xlink:href="https://kraparesh.co/assets/L1.png" y="40%" width="100%" />
+    <image xlink:href="https://kraparesh.co/assets/L2.png" x="31.9%" y="40%"/>
+    <image xlink:href="https://kraparesh.co/assets/L2-1.png" x="38.8%" y="40%"/>
+    <image xlink:href="https://kraparesh.co/assets/L3.png" x="45.6%" y="40%"/>
+    <image xlink:href="https://kraparesh.co/assets/L4.png" x="55.25%" y="40%"/>
+    <image xlink:href="https://kraparesh.co/assets/L5.png" x="62.1%" y="40%"/>
+    <image xlink:href="https://kraparesh.co/assets/L7.png" x="31.5%" y="40%"/>
     <a xlink:href="https://github-readme-stats.vercel.app/api?username=kraparesh&amp;show_icons=true&amp;locale=en&amp;theme=tokyonight&amp;border_color=62F9D5&amp;bg_color=0a192ffa" target="_blank" >
       <image  x="27%" width="22%" xlink:href="https://github-readme-stats.vercel.app/api?username=kraparesh&amp;show_icons=true&amp;locale=en&amp;theme=tokyonight&amp;border_color=62F9D5&amp;bg_color=0a192ffa" alt="KrAparesh's GitHub Stats" y="60%" />
     </a>        
     <a xlink:href="https://streak-stats.demolab.com/?user=krAparesh&amp;theme=tokyonight&amp;border=62F9D5&amp;stroke=62F9D5&amp;background=0a192ffa&amp;dates=CCD6F6" target="_blank" >
       <image  x="52%" width="23.2%" xlink:href="https://streak-stats.demolab.com/?user=krAparesh&amp;theme=tokyonight&amp;border=62F9D5&amp;stroke=62F9D5&amp;background=0a192ffa&amp;dates=CCD6F6" alt="KrAparesh's GitHub Stats" y="60%" />
     </a>
-    
-
 </svg>
