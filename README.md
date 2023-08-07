@@ -1,1 +1,1 @@
-<img src="https://kraparesh.co/components/readMe.svg" height="250px" width="100%"/>
+<img src="https://kraparesh.co/assets/Splash_Screen.png" />
